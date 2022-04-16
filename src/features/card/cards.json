@@ -1,0 +1,37 @@
+[
+  {
+    "desc": "Reset a text or link’s color with .text-reset, so that it inherits the color from its parent.",
+    "status": "In progress",
+    "title": "Reset a text or link’s",
+    "date": 1649842634522,
+    "id": 1
+  },
+  {
+    "desc": "Add classes to an element to easily round its corners.",
+    "status": "Waiting",
+    "title": "Add classes",
+    "date": 1639821634522,
+    "id": 2
+  },
+  {
+    "desc": "Toggle floats on any element, across any breakpoint, using our responsive float utilities.",
+    "status": "Done",
+    "title": "across any breakpoin",
+    "date": 1649879634122,
+    "id": 3
+  },
+  {
+    "desc": "Use these shorthand utilities for quickly configuring the position of an element.",
+    "status": "In progress",
+    "title": "quickly configuring",
+    "date": 1629849214522,
+    "id": 4
+  },
+  {
+    "desc": "Bootstrap includes a wide range of shorthand responsive margin and padding utility classes to modify an Bootstrap includes a wide range of shorthand responsive margin and padding utility classes to modify an Bootstrap includes a wide range of shorthand responsive margin and padding utility classes to modify an Bootstrap includes a wide range of shorthand responsive margin and padding utility classes to modify an Bootstrap includes a wide range of shorthand responsive margin and padding utility classes to modify an Bootstrap includes a wide range of shorthand responsive margin and padding utility classes to modify an Bootstrap includes a wide range of shorthand responsive margin and padding utility classes to modify an Bootstrap includes a wide range of shorthand responsive margin and padding utility classes to modify an element’s appearance.",
+    "status": "Waiting",
+    "title": "shorthand responsive ",
+    "date": 1649149234522,
+    "id": 5
+  }
+]

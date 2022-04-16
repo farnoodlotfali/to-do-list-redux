@@ -1,0 +1,17 @@
+[data-theme="ToDoList"] {
+  --first-color: #c10d00;
+  --second-color: #135287;
+  --third-color: #cb1649;
+  --fourth-color: #182550;
+  --bg-color: #cce3eb;
+}
+
+$first-color: var(--first-color);
+$second-color: var(--second-color);
+$third-color: var(--third-color);
+$fourth-color: var(--fourth-color);
+$bg-color: var(--bg-color);
+
+// Bootstrap size
+$size-xs: 768px;
+$size-lg: 992px;

@@ -1,0 +1,25 @@
+@import "../variables";
+.cardPage {
+  .card_actions {
+    height: fit-content;
+
+    .delete_btn {
+      background-color: $third-color;
+      border: 1px solid $third-color;
+
+      &:focus,
+      &:hover {
+        box-shadow: 0 0px 15px rgb(218, 109, 109);
+      }
+    }
+    .edit_btn {
+      background-color: $second-color;
+      border: 1px solid $second-color;
+
+      &:focus,
+      &:hover {
+        box-shadow: 0 0px 15px rgb(109, 156, 218);
+      }
+    }
+  }
+}

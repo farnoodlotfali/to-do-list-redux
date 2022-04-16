@@ -1,0 +1,13 @@
+@import "../variables";
+
+.header {
+  box-shadow: -3px 3px 15px 1px rgb(52, 49, 48);
+  a {
+    transition: all 0.5s;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

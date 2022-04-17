@@ -48,8 +48,8 @@ const EditModalBox = ({ Show, setShow, desc, status, date, title, id }) => {
         <Modal.Title className="ml-auto">Edit Task</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <div className="d-flex justify-content-between align-items-center">
-          <Col lg="5">
+        <div className="d-flex flex-lg-row flex-column justify-content-between align-items-center">
+          <Col lg="5" xs="12">
             <Form.Control
               className="border-primary py-3 "
               type="Title"
@@ -58,7 +58,7 @@ const EditModalBox = ({ Show, setShow, desc, status, date, title, id }) => {
               onChange={(e) => handleChangeData("title", e.target.value)}
             />
           </Col>
-          <Col className="d-flex" lg="6">
+          <Col className="d-flex" lg="6" xs="12">
             <div className="align-self-center">
               <LocalizationProvider dateAdapter={AdapterDateFns}>
                 <DateTimePicker

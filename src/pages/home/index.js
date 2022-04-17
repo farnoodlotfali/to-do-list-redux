@@ -28,20 +28,22 @@ const Home = () => {
   useEffect(() => {
     let thisYear = new Date().getFullYear();
     return () => {
-      for (let i = 0; i < 5; i++) {
-        setAllYear((prev) => [
-          ...prev,
-          { name: String(thisYear + i), value: thisYear + i },
-        ]);
+      let newArr = [];
+      newArr.push({ name: String(thisYear), value: thisYear });
+      for (let i = 1; i < 3; i++) {
+        newArr.push({ name: String(thisYear + i), value: thisYear + i });
+        newArr.push({ name: String(thisYear - i), value: thisYear - i });
       }
+      newArr.sort((a, b) => a.value - b.value);
+      setAllYear((prev) => [...prev, ...newArr]);
     };
   }, []);
 
   return (
     <div className="home">
       {/* buttons */}
-      <div className="filter_sec d-flex justify-content-around">
-        <div className="d-flex">
+      <div className="filter_sec d-flex flex-md-row flex-column-reverse  align-items-center  justify-content-around">
+        <div className="d-flex flex-wrap justify-content-center">
           <SelectBox
             data={monthes}
             label={"Month"}
@@ -75,7 +77,7 @@ const Home = () => {
             </Button>
           </div>
         </div>
-        <div className="d-flex">
+        <div className="d-flex mb-md-0 mb-4">
           <Button
             onClick={() => dispatch(setModalShowAsync(true))}
             className="  align-self-center px-4"
@@ -89,7 +91,7 @@ const Home = () => {
       <hr className="mx-auto w-75" />
       {/* cards */}
 
-      <div className="d-flex flex-wrap gap-4 justify-content-center">
+      <div className="home_cards d-flex flex-wrap gap-4 justify-content-center">
         {loading ? (
           <CircularProgress color="error" />
         ) : filterd.length === 0 ? (

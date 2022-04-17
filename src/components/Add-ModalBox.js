@@ -64,8 +64,8 @@ const AddModalBox = () => {
         <Modal.Title className="ml-auto">Add New Task</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <div className="d-flex justify-content-between align-items-center">
-          <Col lg="5">
+        <div className="d-flex flex-lg-row flex-column justify-content-between align-items-center">
+          <Col lg="5" xs="12">
             <Form.Control
               className="border-danger py-3 "
               type="Title"
@@ -74,7 +74,7 @@ const AddModalBox = () => {
               onChange={(e) => handleChangeData("title", e.target.value)}
             />
           </Col>
-          <Col className="d-flex" lg="6">
+          <Col className="d-flex" lg="6" xs="12">
             <div className="align-self-center">
               <LocalizationProvider dateAdapter={AdapterDateFns}>
                 <DateTimePicker

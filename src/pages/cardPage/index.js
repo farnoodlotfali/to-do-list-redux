@@ -1,4 +1,4 @@
-import { Button, Col } from "react-bootstrap";
+import { Button, Col, Container } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { useState } from "react";
@@ -27,10 +27,10 @@ const CardPage = () => {
   let { color } = colorType.find((item) => item.name === status);
 
   return (
-    <div className="cardPage d-flex flex-lg-row flex-column justify-content-center gap-lg-5 gap-3">
+    <Container className="cardPage d-flex flex-md-row flex-column justify-content-center gap-lg-5 gap-3">
       <Col
-        lg="8"
-        md="12"
+        md="8"
+        xs="12"
         style={{ boxShadow: `0 5px 10px ${color}` }}
         className=" bg-white p-4 rounded border"
       >
@@ -40,8 +40,8 @@ const CardPage = () => {
         </p>
       </Col>
       <Col
-        lg="3"
-        md="12"
+        md="4"
+        xs="12"
         style={{ boxShadow: `0 5px 10px ${color}` }}
         className="card_actions bg-white p-4 rounded border"
       >
@@ -79,7 +79,7 @@ const CardPage = () => {
         title={title}
         id={id}
       />
-    </div>
+    </Container>
   );
 };
 

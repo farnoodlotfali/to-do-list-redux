@@ -8,4 +8,14 @@
     font-size: 14px;
     cursor: context-menu;
   }
+
+  &_cards {
+    .cardItem {
+      width: 290px;
+
+      @media (max-width: $size-xs) {
+        width: 350px;
+      }
+    }
+  }
 }

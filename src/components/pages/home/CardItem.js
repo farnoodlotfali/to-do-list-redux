@@ -18,8 +18,8 @@ const CardItem = ({ card }) => {
   };
   return (
     <div
-      style={{ width: "20%", boxShadow: `0 5px 10px ${color}` }}
-      className="bg-white p-4 rounded border"
+      style={{ boxShadow: `0 5px 10px ${color}` }}
+      className="cardItem bg-white p-4 rounded border"
     >
       <h4 className="text-center">{turncate(title)}</h4>
 

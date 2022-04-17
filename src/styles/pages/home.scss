@@ -11,11 +11,7 @@
 
   &_cards {
     .cardItem {
-      width: 290px;
-
-      @media (max-width: $size-xs) {
-        width: 350px;
-      }
+      width: 300px;
     }
   }
 }

@@ -10,7 +10,7 @@ const MianLayOut = () => {
       <Header />
       <AddModalBox />
 
-      <main className="mt-4">
+      <main className="mt-4  pb-5">
         <Outlet />
       </main>
     </>
